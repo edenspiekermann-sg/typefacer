@@ -1,14 +1,65 @@
+@font-face {
+	font-family: 'Founders';
+	src: url('FoundersGrotTest-Bold.woff') format('woff');
+}
+
 body {
 	padding: 0;
 	margin: 0;
-	width: 100vw;
-	height: 100vh;
 }
 .container {
-	width: 100%;
-	height: 100%;
+	margin: 0 auto;
+	max-width: 280px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 668px;
+	}
+	h1 {
+		font-size: 48;
+		line-height: 1.125;
+	}
+	p {
+		font-size: 20;
+		line-height: 1.6;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 918px;
+	}
+}
+
+h1 {
+	font-family: 'Founders';
+	font-size: 30px;
+	/*
+	font-feature-settings: inherit;
+	font-variant: inherit;
+	font-weight: inherit;
+	letter-spacing: inherit;
+	*/
+}
+
+p {
+	font-family: 'Karla';
+	line-height: 1.625;
+	letter-spacing: -0.25px;
+	/* 
+	font-feature-settings: inherit;
+	font-kerning: inherit;
+	font-size: inherit;
+	font-variant: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	*/
+}
+
+
