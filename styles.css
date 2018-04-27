@@ -73,6 +73,7 @@ form {
 h1 {
 	font-family: 'Founders';
 	font-size: 30px;
+	letter-spacing: 0px;
 	/*
 	font-feature-settings: inherit;
 	font-variant: inherit;
