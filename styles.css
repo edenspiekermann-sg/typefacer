@@ -47,29 +47,6 @@ form {
 	padding: 20px 0;
 }
 
-@media screen and (min-width: 768px) {
-	#container {
-		max-width: 668px;
-	}
-	h1 {
-		font-size: 48;
-		line-height: 1.125;
-	}
-	p {
-		font-size: 20;
-		line-height: 1.6;
-	}
-	.form-container {
-		flex-direction: row;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	#container {
-		max-width: 918px;
-	}
-}
-
 h1 {
 	font-family: 'Founders';
 	font-size: 30px;
@@ -95,4 +72,33 @@ p {
 	line-height: inherit;
 	letter-spacing: inherit;
 	*/
+}
+
+@media screen and (min-width: 768px) {
+	#container {
+		max-width: 668px;
+	}
+	h1 {
+		font-size: 48px;
+		line-height: 1.125;
+	}
+	p {
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.form-container {
+		flex-direction: row;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#container {
+		max-width: 918px;
+	}
+	h1 {
+		font-size: 48px;
+	}
+	p {
+		font-size: 20px;
+	}
 }
