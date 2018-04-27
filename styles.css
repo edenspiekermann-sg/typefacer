@@ -7,8 +7,24 @@ body {
 	padding: 0;
 	margin: 0;
 }
-.container {
+
+a {
+	color: inherit;
+	text-decoration: none !important;
+}
+
+a:hover {
+	color: blue;
+}
+
+.note {
+	padding-top: 50px;
+	width: 300px;
 	margin: 0 auto;
+}
+
+#container {
+	margin: 50px auto;
 	max-width: 280px;
 	display: flex;
 	flex-direction: column;
@@ -16,8 +32,22 @@ body {
 	justify-content: center;
 }
 
+.form-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 50px auto;
+}
+
+form {
+	width: 200px;
+	padding: 20px 0;
+}
+
 @media (min-width: 768px) {
-	.container {
+	#container {
 		max-width: 668px;
 	}
 	h1 {
@@ -28,10 +58,13 @@ body {
 		font-size: 20;
 		line-height: 1.6;
 	}
+	.form-container {
+		flex-direction: row;
+	}
 }
 
 @media (min-width: 1024px) {
-	.container {
+	#container {
 		max-width: 918px;
 	}
 }
@@ -61,5 +94,3 @@ p {
 	letter-spacing: inherit;
 	*/
 }
-
-

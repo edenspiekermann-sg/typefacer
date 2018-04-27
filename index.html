@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<meta charset='utf-8'>
@@ -9,23 +8,88 @@
 		<link href="./FoundersGrotTest-Bold.woff" rel="font/woff">
 	</head>
 	<body>
-		<div class="container">
-			<h1>Headline for desktop is Founders Grotesk Bold, font size 30, line height 36</h1>
-			<p>
+		<!-- <input type="file" id="input"> -->
+		<div class="note">
+			Each value has specific CSS rules - to see them, click the form label below.
+		</div>
+		<div class="form-container">
+			<form action="javascript:;" onsubmit="updateHeader()">
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">
+					Header Font Size
+				</a>
+				<br>
+				<input type="text" name="fontSize" id="headlineInputFontSize" value=""><br>
+				<input type="submit" value="Submit">
+			</form> 
+			<form action="javascript:;" onsubmit="updateHeader()">
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height" target="_blank">
+					Header Line Height
+				</a>
+				<br>
+				<input type="text" name="lineHeight" id="headlineInputLineHeight" value=""><br>
+				<input type="submit" value="Submit">
+			</form>
+			<form action="javascript:;" onsubmit="updateHeader()">
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing" target="_blank">
+					Header Letter Spacing
+				</a>
+				<br>
+				<input type="text" name="fontSize" id="headlineInputLetterSpacing" value=""><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="form-container">
+			<form action="javascript:;" onsubmit="updateBody()">
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">
+					Body Font Size
+				</a>
+				<br>
+				<input type="text" name="fontSize" id="bodyInputFontSize" value=""><br>
+				<input type="submit" value="Submit">
+			</form> 
+			<form action="javascript:;" onsubmit="updateBody()">
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height" target="_blank">
+					Body Line Height
+				</a>
+				<br>
+				<input type="text" name="lineHeight" id="bodyInputLineHeight" value=""><br>
+				<input type="submit" value="Submit">
+			</form>
+			<form action="javascript:;" onsubmit="updateBody()">
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing" target="_blank">
+					Body Letter Spacing
+				</a>
+				<br>
+				<input type="text" name="fontSize" id="bodyInputLetterSpacing" value=""><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="form-container">
+			<form action="javascript:;" onsubmit="updateContainer()">
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width" target="_blank">
+					Container Max Width
+				</a>
+				<br>
+				<input type="text" name="fontSize" id="containerInputMaxWidth" value=""><br>
+				<input type="submit" value="Submit">
+			</form> 
+		</div>
+		<div id="container">
+			<h1 id="headline">Headline for desktop is Founders Grotesk Bold, and it's pretty nice if you can consider how it was hand crafted by a very smart cookie in New Zealand</h1>
+			<p id="body">
 				Body copy for desktop is Karla Regular, character spacing -0.25, font size 20, line height 32. We are a Singapore-based blockchain company that makes cryptocurrencies instantly spendable anytime anywhere. We give people an opportunity to conveniently use their digital assets in everyday life.
-			</p>
-			<p>
+			<br><br>
 				Our TenX payment system includes TenX mobile wallet and TenX debit/prepaid card, which can be used in almost 200 countries at over 42 million points of acceptance online and offline. We offer users access to several cryptocurrencies making it convenient and secure. Creating an outstanding experience from product to customer is the core of what we do.
-			</p>
-			<p>
+			<br><br>
 				We were founded in June of 2015. Back then, the company was called OneBit, as we were still focusing only on Bitcoin. Our co-founders believe that the blockchain and cryptocurrency are the future of payments. They founded the company with a vision to have assets on the blockchain, available not only to industry insiders but to anyone in the world.
-			</p>
-			<p>
+			<br><br>
 				We received our first outside investment in 2016, which was also the time when PayPal started to incubate the company for further growth. We rebranded to TenX—a name inspired by not wanting to grow “one-bit” at a time anymore, but rather by “10x”—meaning ten times as much, covering the whole range of crypto space.
-			</p>
-			<p>
+			<br><br>
 				On the 24th of June, 2017, we completed one of the biggest and most rapidly funded initial token sales to date, having sold around 100 million PAY tokens and received 80 million USD worth of cryptocurrencies in 7 minutes. During the token sale, we accepted one of the most diverse range of coins and tokens any company has ever accepted, with Bitcoin, Ether, Litecoin, Dash and 18 different ERC20s.
+			<br><br>
 			</p>
 		</div>
 	</body>
+	<!-- Scripts -->
+	<script src="./scripts.js"></script>
 </html>
