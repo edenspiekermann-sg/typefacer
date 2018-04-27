@@ -57,3 +57,33 @@ function updateContainer() {
 }
 
 window.onload = populateForms()
+
+// Show and hide options
+function toggleOptions() {
+
+	forms = document.querySelectorAll('Form')
+	toggle = document.getElementById('toggle')
+
+	if (toggle.value === 'on') {
+		// Change button label
+		toggle.innerHTML = 'Show Options'
+		toggle.value = 'off'
+
+		// Toggle forms off
+		forms = document.querySelectorAll('Form')
+		for (var form of forms) {
+			form.style.display = 'none'
+		}
+	} else {
+		// Change button label
+		toggle.innerHTML = 'Hide Options'
+		toggle.value = 'on'
+
+		// Toggle forms on
+		forms = document.querySelectorAll('Form')
+		for (var form of forms) {
+			form.style.display = 'block'
+		}
+	}
+
+}
