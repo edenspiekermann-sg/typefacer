@@ -1,25 +1,3 @@
-// Upload font section
-/*
-var inputElement = document.getElementById('input')
-inputElement.addEventListener('change', handleFiles, false)
-function handleFiles() {
-	var fileList = this.files 
-	console.log(fileList)
-	link = document.createElement('link')
-	link.href = fileList[0].name
-	link.rel = fileList[0].type
-
-	var sheet = window.document.styleSheets[0]
-	sheet.insertRule(
-		`@font-face { font-family: ${link.href}; src: url(${link.href}) format(${
-			link.rel
-		});}`
-	)
-}
-*/
-
-// Change CSS Section
-
 var headline = document.getElementById('headline')
 var headlineInputFontSize = document.getElementById('headlineInputFontSize')
 var headlineInputLineHeight = document.getElementById('headlineInputLineHeight')
