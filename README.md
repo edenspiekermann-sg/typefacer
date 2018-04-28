@@ -21,3 +21,9 @@ To change fonts, add your font files to the project directory and link to them i
 ## Notes
 
 This project was built using [Site Starter](https://github.com/tyhopp/site-starter). 
+
+## License
+
+MIT License
+
+Copyright (c) 2018 Ty Hopp
